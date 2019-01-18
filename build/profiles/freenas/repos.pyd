@@ -24,19 +24,11 @@
 #
 from utils import env
 
-if env("WITH_PNFS"):
-    repos += {
-        "name": "os",
-        "path": "os",
-        "url": "https://github.com/freenas/os.git",
-        "branch": "freenas/11-stable-pNFS"
-}
-else:
-    repos += {
-        "name": "os",
-        "path": "os",
-        "url": "https://github.com/freenas/os.git",
-        "branch": "freenas/11-stable"
+repos += {
+    "name": "os",
+    "path": "os",
+    "url": "https://github.com/trueos/trueos.git",
+    "branch": "freenas/12-stable"
 }
 
 repos += {
@@ -58,7 +50,7 @@ repos += {
     "name": "ports",
     "path": "ports",
     "url": "https://github.com/freenas/ports.git",
-    "branch": "freenas/master"
+    "branch": "freenas/12-experimental"
 }
 
 repos += {
@@ -115,5 +107,5 @@ if PRODUCT == "TrueNAS":
         "name": "truenas",
         "path": "truenas",
         "url": "git@github.com:iXsystems/truenas.git",
-        "branch": "master"
+        "branch": "freenas/12-experimental"
     }
