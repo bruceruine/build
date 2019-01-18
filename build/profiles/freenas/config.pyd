@@ -73,7 +73,7 @@ kernel_modules = [
     "netmap",
     "nmdm",
     "ntb",
-    "nvdimm",
+    "ixnvdimm",
     "toecore",
     "cxgb",
     "cxgbe",
