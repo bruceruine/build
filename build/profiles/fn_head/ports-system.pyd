@@ -401,7 +401,7 @@ ports += "devel/libhyve-remote"
 ports += "net/nsq"
 ports += "net/py-pynsq"
 
-ports += "graphics/drm-next-kmod"
+ports += "graphics/drm-fbsd11.2-kmod"
 
 if DEBUG:
 	ports += "misc/py-pexpect"
